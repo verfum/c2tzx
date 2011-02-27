@@ -2,7 +2,7 @@
 rem echo %~n1
 rem echo %~p1
 
-GOTO FINISH
+rem GOTO FINISH
 
 IF "%1"=="" GOTO BAD_PARAM
 
