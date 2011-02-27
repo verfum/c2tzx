@@ -1,0 +1,24 @@
+Addresses 0 to 16383 are assigned to the fixed form of memory, the ROM, and so the first address assigned to RAM is 16384. Table one shows the memory map of the Spectrum: how RAM is used starting at 16384. The display file, for example, which holds the information which is currently displayed on screen, occupies locations 16384 to 22527. The attributes, which determine the colour, brightness and so on, of the screen display, follow immediately afterwards in locations 22528 to 23295.
+ 
+Starting address or       Location of          Memory contents
+system variable name      system variable
+16384                          -                display file
+22528                          -                attributes
+23296                          -                printer buffer
+23552                          -                system variables
+23734                          -                microdrive map
+CHANS                        23631              channel information
+PROG                         23635              Basic program
+VARS                         23627              variables
+E-LINE                       23641              command/line being edited
+WORKSP                       23649              data being INPUT
+STKBOT                       23651              calculator stack
+STKEND                       23653              spare
+sp                             -                machine stack and GOSUB stack
+RAMTOP                       23730              user machine code routines
+UDG                          23675              user-defined graphics
+P-AMT                        23732              end of RAM
+
+Table 1. Spectrum memory map. The stack point, sp, is held not in RAM but in
+the sp register in the Z80A microprocessor.	 
+
