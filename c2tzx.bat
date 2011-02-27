@@ -1,8 +1,8 @@
 @ECHO OFF
-echo %~n1
-echo %~p1
+rem echo %~n1
+rem echo %~p1
 
-rem GOTO FINISH
+GOTO FINISH
 
 IF "%1"=="" GOTO BAD_PARAM
 
