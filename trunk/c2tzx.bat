@@ -1,12 +1,15 @@
 @ECHO OFF
 echo %~n1
+echo %~p1
+
+rem GOTO FINISH
 
 IF "%1"=="" GOTO BAD_PARAM
 
 tskill spectaculator
-call sdcc\bin\sdcc -mz80 --no-std-crt0 --code-loc 32768 --xram-loc 50000 test.c
-call hex2bin\hex2bin %~n1.ihx
-call C2TZX\bin\C2TZX.exe header\header.bin %~n1.bin %~n1.tzx
+call %~p1\sdcc\bin\sdcc -mz80 --no-std-crt0 --code-loc 32768 --xram-loc 50000 %1
+call %~p1\hex2bin\hex2bin %~n1.ihx
+call %~p1\C2TZX\bin\C2TZX.exe %~p1\header\header.bin %~n1.bin %~n1.tzx
 del %~n1.asm
 del %~n1.bin
 del %~n1.ihx
