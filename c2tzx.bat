@@ -6,7 +6,7 @@ rem GOTO FINISH
 
 IF "%1"=="" GOTO BAD_PARAM
 
-tskill spectaculator
+tskill zxspin
 call %~p1\sdcc\bin\sdcc -mz80 --no-std-crt0 --code-loc 32768 --xram-loc 50000 %1
 call %~p1\hex2bin\hex2bin %~n1.ihx
 call %~p1\C2TZX\bin\C2TZX.exe %~p1\header\header.bin %~n1.bin %~n1.tzx
