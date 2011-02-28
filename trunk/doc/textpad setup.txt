@@ -21,3 +21,11 @@ File = 1
 Line = 1
 Column = 
 
+
+To assign F7 (compile) and F5 (run) to Textpad:
+
+Configure->Preferences->Keyboard...
+Then in 'Categories' you'll see 'Tools' and C2tzx.
+Assign this to F7 (make sure you click the 'Assign' button). Otherwise it will be still
+assigned to ToolSpell.
+
