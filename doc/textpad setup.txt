@@ -1,0 +1,23 @@
+
+1. Configure->Preferences...->Tools->Add->Program...->Select c2tzx.bat
+Now c2tzx will be added to textpad, now select it...
+2. Configure->Preferences...->Tools->C2tzx
+
+You will see a dialog and you now need to set these ...
+
+Command : C:\projects\c2tzx\c2tzx.bat
+Parameters: $File
+Initial folder: $FileDir
+
+Apart from these two below, all others are unselected...
+Capture output: x
+Sound alert when completed: x
+
+Regular expression to match output:
+^\(.*\):\([0-9]*\):.*$
+
+Registers:
+File = 1
+Line = 1
+Column = 
+
