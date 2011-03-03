@@ -12,6 +12,7 @@ Initial folder: $FileDir
 Apart from these two below, all others are unselected...
 Capture output: x
 Sound alert when completed: x
+Save all documents first x
 
 Regular expression to match output:
 ^\(.*\):\([0-9]*\):.*$
@@ -29,3 +30,9 @@ Then in 'Categories' you'll see 'Tools' and C2tzx.
 Assign this to F7 (make sure you click the 'Assign' button). Otherwise it will be still
 assigned to ToolSpell.
 
+
+Run
+---
+Command : C:\projects\c2tzx\run.bat
+Parameters: $FileName
+Initial folder: $FileDir
